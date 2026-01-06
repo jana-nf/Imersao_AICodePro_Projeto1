@@ -1,0 +1,39 @@
+{
+  "name": "whatsapp-ia-supabase",
+  "version": "1.0.0",
+  "description": "Sistema WhatsApp + IA + Supabase para queries inteligentes",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node start.js",
+    "start:direct": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "node examples/test-queries.js",
+    "test:queries": "node examples/test-queries.js queries",
+    "test:supabase": "node examples/test-queries.js supabase",
+    "test:format": "node examples/test-queries.js format",
+    "install:deps": "npm install",
+    "setup": "npm install && echo 'Sistema pronto! Execute: npm start'"
+  },
+  "keywords": [
+    "whatsapp",
+    "ai",
+    "supabase",
+    "openai",
+    "bot"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.52.0",
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "@supabase/supabase-js": "^2.39.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "openai": "^4.24.1",
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "^1.34.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
